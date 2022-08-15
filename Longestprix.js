@@ -1,0 +1,3 @@
+longestPrefix = function(a){
+
+}
