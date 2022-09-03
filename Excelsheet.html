@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel sheet column title</title>
+</head>
+<body>
+    <p>Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
+
+        For example:
+        
+        A -> 1
+        B -> 2
+        C -> 3
+        ...
+        Z -> 26
+        AA -> 27
+        AB -> 28 
+        ...
+         
+        
+        Example 1:
+        
+        Input: columnNumber = 1
+        Output: "A"
+        Example 2:
+        
+        Input: columnNumber = 28
+        Output: "AB"
+        Example 3:
+        
+        Input: columnNumber = 701
+        Output: "ZY"</p><br><br>
+
+    <script>
+    function convertToTitle(columnNumber) {
+        // intialize the column name as an empty array
+        let columnName = [];
+
+        while(columnNumber > 0){
+        var remainder = columnNumber % 26;
+           
+        // if the modulus is zero
+          if(remainder == 0){
+            columnName.push('Z');
+            columnNumber = Math.floor(columnNumber/26) - 1;
+          }
+        //   if modulus is not zero
+        // convert the column number minus 1 to unicode then add  the unicode of the character code of A
+        else{
+            columnName.push(String.fromCharCode((remainder -1) +  'A'.charCodeAt(0)));
+            columnNumber = Math.floor(columnNumber/26);
+        }}
+        document.write(columnName.reverse().join(""))
+         };
+    
+        convertToTitle(701)
+    </script>
+</body>
+</html>
