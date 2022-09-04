@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loop1(){
+            let arr1 = [2,3,4,5];
+            let arr2 = [6,7,8,9];
+            let sum1 = 0;
+            let sum2 = 0;
+
+            for(let i=0; i<=arr2.length; i++){
+                arr =  arr2[i]
+                document.write(arr)
+                // sum1 += arr1[i]
+                // sum1 += arr2[i]
+            }
+        }
+    //  loop1()
+
+    //  using reduce method
+    function loop2(){
+        const array1 = [1,2,3,4];
+
+        const reducer = (accumulator, curr) => accumulator + curr
+
+        document.write(array1.reduce(reducer)) ;
+    }
+    // loop2()
+
+    // basic for loop
+    function loop3(){
+        total = 0;
+        for(var i=0; i<=5; i++){
+           total += i
+        }
+        return total
+    }
+//    document.write(loop3())
+
+// loop through an array basic loop
+function loop4(){
+   var color = ['black', 'green', 'yellow','blue','violet']
+
+   for(var i=0; i<color.length; i++){
+      res = color[i];
+      document.write(res+ "<br>")
+   }
+}
+loop4()
+document.write("========================================= loop through an object <br> ")
+// loop through an object
+function loop5(){
+    var person = {
+        name:  'diana',
+        age: 23,
+        height: '153cm'
+    }
+
+    for(var elem in person){
+        res = elem
+        document.write(res+ ":"+ person[elem] + "<br>")
+    }
+}
+loop5()
+
+document.write("===================================== decrementing loop <br>");
+
+function loop6(){
+    for(var i=10; i>=0; i--){
+        document.write(i +"<br>")
+    }
+}
+loop6()
+    </script>
+</body>
+</html>
