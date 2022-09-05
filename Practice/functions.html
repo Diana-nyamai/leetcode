@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript functions</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    document.write("=============================================== basic function <br>")
+    function func(){
+        document.write("hello world <br>")
+    }
+    func()
+
+    document.write("=============================================== function with parameter <br>")
+    function func2(name){
+     document.write("hello " + name + "<br>")
+    }
+    func2('diana')
+    
+    document.write("=============================================== function return statement <br>")
+
+    function func3(num1, num2){
+       return num1 + num2
+    }
+    var a = func3(3,5)
+    document.write(a + "<br>")
+
+    document.write("=============================================== function checking for identical values <br>")
+    function func4(n1, n2){
+        for(var i=0; i<n1.length; i++){
+            if(n1[i] === n2){
+                var res = "The number exists"
+                return  res
+            }
+        }
+        return "The number doesnt exist"
+    }
+    var b = func4([2,3,4], 3)
+    document.write(b)
+    </script>
+</body>
+</html>

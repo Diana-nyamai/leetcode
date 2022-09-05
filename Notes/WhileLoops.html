@@ -13,6 +13,24 @@
 </head>
 <body>
     <h1>while loops notes</h1>
+   <p>while loops work the same way as loops. the only difference is that in while loops you have to intialise the starting outside the while condition.</p> 
+   <p>An example of  a while loop</p>
+   <p>var a = 0</p>
+   <p>while(a < 10){
+    console.log(a)
+    a++
+    // this will print numbers from 0 to 9 excluding 10 because 10 is not less than 10 but equal to 10 so the statement is wrong and thus, 10 cannot be dispayed
+    }</p>
+    <p><b>note</b> Remember to include the incrementing operator otherwise your program will crash or break. The reason behind this is that the condition will always be true and the loop will run infinately.</p>
+    <p>============================================================================================================</p><br/>
     
+    <p>The other thing to note is that when you put the incrementing operator before the code that is to be executed the value will be incremented first before it is printed</p>
+    <p>for example:</p>
+    <p>var a = 0</p>
+    <p>while(a < 10){
+        a++;
+        console.log(a)
+        // you will notice that the number to be printed will be 1 to 11 and not 0 to 9
+    }</p>
 </body>
 </html>
