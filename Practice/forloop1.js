@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         function loop1(){
             let arr1 = [2,3,4,5];
             let arr2 = [6,7,8,9];
@@ -16,7 +7,7 @@
 
             for(let i=0; i<=arr2.length; i++){
                 arr =  arr2[i]
-                document.write(arr)
+                console.log(arr)
                 // sum1 += arr1[i]
                 // sum1 += arr2[i]
             }
@@ -29,7 +20,7 @@
 
         const reducer = (accumulator, curr) => accumulator + curr
 
-        document.write(array1.reduce(reducer)) ;
+        console.log(array1.reduce(reducer)) ;
     }
     // loop2()
 
@@ -41,7 +32,7 @@
         }
         return total
     }
-//    document.write(loop3())
+//    console.log(loop3())
 
 // loop through an array basic loop
 function loop4(){
@@ -49,11 +40,11 @@ function loop4(){
 
    for(var i=0; i<color.length; i++){
       res = color[i];
-      document.write(res+ "<br>")
+      console.log(res+ "\n")
    }
 }
 loop4()
-document.write("========================================= loop through an object <br> ")
+console.log("========================================= loop through an object \n ")
 // loop through an object
 function loop5(){
     var person = {
@@ -64,19 +55,16 @@ function loop5(){
 
     for(var elem in person){
         res = elem
-        document.write(res+ ":"+ person[elem] + "<br>")
+        console.log(res+ ":"+ person[elem] + "\n")
     }
 }
 loop5()
 
-document.write("===================================== decrementing loop <br>");
+console.log("===================================== decrementing loop \n");
 
 function loop6(){
     for(var i=10; i>=0; i--){
-        document.write(i +"<br>")
+        console.log(i +"\n")
     }
 }
 loop6()
-    </script>
-</body>
-</html>

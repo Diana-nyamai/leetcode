@@ -1,35 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEMO</title>
-</head>
-<body style="text-align:center ;">
-    <script>
+
         // push method adds new items to the end of an array
         const colors = ['black', 'pink', 'yellow']
         colors.push('white','blue')
-        // document.write(colors);
+        // console.log(colors);
         
         // pop method removes the last eement from an array
         const color = ['green', 'purple', 'white','grey'];
         color.pop();
-        // document.write(color.length)
+        // console.log(color.length)
 
         a = 701%26;
         b = String.fromCharCode(67);
         c= Math.floor(701/26)
-        // document.write(" multiplication:" +c + "<br>")
-        // document.write(b)
-        // document.write("modulus: " + a)
+        // console.log(" multiplication:" +c + "\n")
+        // console.log(b)
+        // console.log("modulus: " + a)
          
         // var a = 3
         // while(a > 0){
         //     // a--
         //     // console.log('i am a gitl')
-        //     document.write('2')
+        //     console.log('2')
         //     a--
         // }
 
@@ -41,27 +32,25 @@
         //     empty = val[num%26] + empty;
         //     num = Math.floor(num/26);
         //  }
-        //  document.write(empty)
+        //  console.log(empty)
 
         // var val = "abcs"
         // var em = "diana"
         // em = val[3] + em
-        // document.write(em)
+        // console.log(em)
 
         // var fruits = ['banana', 'apple', 'mango','pineapple']
         // var num = fruits.length;
         // while(num > 0){
         //     num --
-        //     document.write('there is ' + fruits[num] +'<br>')
+        //     console.log('there is ' + fruits[num] +'\n')
         //     // num --;
         // }
 
         var nums = 4
         while(nums > 0){
            nums--
-            document.write(nums + "<br>")
+            console.log(nums + "\n")
             // nums--
         }
-    </script>
-</body>
-</html>
+ 
