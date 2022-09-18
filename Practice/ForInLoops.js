@@ -1,7 +1,7 @@
 const forin = () =>{
    const person = {
     fname: 'diana',
-    age: 24,
+    age: 25,
     dob: 1998
    }
    
