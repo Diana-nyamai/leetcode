@@ -1,3 +1,4 @@
+// accessing all the properties in an object
 const forin = () =>{
    const person = {
     fname: 'diana',
@@ -7,7 +8,7 @@ const forin = () =>{
    
    let sentence = ""
    for(let p in person){
-    sentence += person[p] + "\t"
+    sentence += person[p]+ "\t"
    }
    return sentence
 }
